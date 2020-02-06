@@ -106,7 +106,7 @@ class Board extends Component {
         var searchKeywords = searchValue.split(' ');
         searchValue = searchKeywords.join('+');
 
-        var url = 'http://www.omdbapi.com/?apikey=498c779a';
+        var url = 'https://www.omdbapi.com/?apikey=498c779a';
         if(searchValue !== undefined && searchValue.length !== 0)
             url += '&s=' + searchValue;
         if(yearValue !== undefined && yearValue.length !== 0 && this.isNumeric(yearValue) && yearValue.length === 4)
