@@ -91,7 +91,7 @@ class Board extends Component {
 
     componentDidMount() {
         var persistantFavs = localStorage.getItem('favorites');
-        if (persistantFavs !== undefined && persistantFavs !== '')
+        if (persistantFavs !== undefined && persistantFavs !== '' && persistantFavs !== null)
             this.setState({favorites: persistantFavs.split(',')});
         else
             this.setState({favorites: []});
